@@ -60,7 +60,7 @@
 |channel-name=${snippet.channelTitle}
 |${!channelLink ? "dont-link-channel=yes" : "link=" + channelLink}
 |id=${contentLink}
-|title=${snippet.title}
+|title=${snippet.title.replaceAll("|", "{{!}}")}
 |date=${publishedDate}
 |access-date=${currentDate}
 }}`
